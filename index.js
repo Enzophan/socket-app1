@@ -115,6 +115,6 @@ mongo.connect('mongodb://admin:Hiennhan47@ds237989.mlab.com:37989/nodenhan', fun
 
 });
 
-http.listen(3000, function () {
+http.listen(process.env.PORT || 3000, function () {
     console.log('listening on *:3000');
 });
